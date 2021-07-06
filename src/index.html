@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Cipher</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap">
+	<!-- Personalización texto bienvenida y main-->
+	<style>
+		.texto {
+			font-family: 'Berkshire Swash', cursive;
+			font-size: 40px
+		}
+
+		#main-container {
+			padding-top: 20px;
+			text-align: center;
+		}
+	</style>
+	<!-- FIN Personalización texto bienvenida y main-->
+</head>
+
+<body>
+	<main>
+		<!-- Foto lupa-->
+		<img class="foto1" src="https://bit.ly/3wofvWh" alt="imagen 1">
+  <h1>
+    <div class="texto">
+    Bienvenido al sitio oculto
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+  </h1>
+      <p><h3>Cifra mensajes para que tu información no caiga en manos incorrectas</h3></p>
+    Desliza para indicar la clave: 
+    <input type="range" min="1" max="10" value="1" placeholder="Número"  oninput="this.nextElementSibling.value = this.value" id="offset"/> 
+    <output>1</output>
+   
+    <h4>Escribe mensaje que deseas cifrar o descifrar</h4>
+
+<textarea id="user_text" class="rango" placeholder="Ingresa tu mensaje"></textarea>
+  <textarea id="answer" disabled class="rango" placeholder="Resultado" ></textarea>
+
+<div id="main-container">
+ <button id="encode_button"  class= "btn btn-encode"><b>CIFRA</b></button>
+  <button id="decode_button"  class="btn btn-decode"><b>DESCIFRA</button>  
+</div>
+       
+
+  </main>
+
+ <script src="cipher.js"></script>
+ <script src="index.js"></script>  
+
+</body>
 </html>

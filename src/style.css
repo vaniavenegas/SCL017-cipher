@@ -1,0 +1,117 @@
+/* Importa fuente html */
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
+
+/* Apariencia de html */
+body {
+    --color-terminal: rgb(247 196 21);
+    --borde-redondo: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+}
+
+* {
+    font-family: 'Mitr', sans-serif;
+    font-size: 20px
+}
+
+/* Propiedades de la imagen */
+.foto1 { 
+  padding: 1px; 
+  margin: 1px; 
+  border: 2px solid black; 
+  float: right; 
+  width: 100px; }
+
+/* Propiedades de la botones encode decode */
+input, button {
+    border: none;
+    outline: none;
+}
+/* Propiedades del main */
+main {
+    padding: 25px;
+    box-shadow: 8px 8px 35px 0px rgb(247 196 21 / 75%);
+    border-radius: var(--borde-redondo);
+}
+
+/* Apariencia caja de texto */
+.rango {
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    text-align: center;
+    align-items: center;
+}
+
+/* Apariencia caja botón clave */
+input[type='range'] {
+    -webkit-appearance: none;
+    border-radius: var(--borde-redondo);
+    background:var(--color-terminal);
+    margin: 0;
+    padding: 0 5px;
+    height: 20px;
+}
+/* Apariencia botón que se desliza */
+input[type='range']::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    background:rgb(0, 0, 0);
+    border-radius: 40%;
+    height:15px;
+    width:15px;
+}
+
+/* Apariencia cajas de texto*/ 
+
+#user_text, #answer {
+    background-color: var(--color-terminal);
+    width: -webkit-fill-available;
+}
+
+#user_text {
+    margin: 5px 0 0;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    border-top-left-radius: var(--borde-redondo);
+    border-top-right-radius: var(--borde-redondo);
+}
+
+#answer {
+    height: 40px;
+    color: #ff0000;
+    padding: 0 10px 10px;
+    border-bottom-left-radius: var(--borde-redondo);
+    border-bottom-right-radius: var(--borde-redondo);
+}
+
+/* Apariencia botones cifrador y descifrador*/
+
+.btn{
+			border-radius: 20px;
+			display: inline-block;
+			padding: 15px 15px;
+			text-decoration: none;
+			text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+			box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+      color: black;
+			background-color: rgb(247 196 21)
+		}
+		.btn:hover{
+			background-color: #D6A80A;	
+      color: #4F4319;
+		}
+    
+		.btn-encode:active{
+			background-color: #29962A;
+		}
+	
+		.btn-decode:active{
+			background-color: #A62828;
+		}
+
+    
